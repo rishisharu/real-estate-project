@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>REAL ESTATE DASHBOARD</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      display: flex; /* ✅ This makes the sidebar and content sit side-by-side */
+      height: 100vh;
+      width: 50%;
+    }
+
+    .nav-container {
+      width: 27%;
+      background-color: #2c3e50;
+      color: white;
+      padding: 20px;
+    }
+
+    .nav h1 {
+      margin-bottom: 20px;
+    }
+
+    .nav ul {
+      list-style: none;
+      padding: 0;
+      text-align: center;
+    }
+
+    .nav li {
+      margin-bottom: 15px;
+    }
+
+    .nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    .main-content {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    iframe {
+      flex-grow: 1;
+      width: 270%;
+      border: none;
+    }
+    .button {
+      width: 80%;
+      padding: 15px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      background-color: purple;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      text-decoration:none;
+      border: solid;
+      border-color: bisque;
+    }
+    img{
+      border: solid;
+      border-radius: 8px;
+      border-color: grey;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="nav-container">
+      <nav class="nav">
+        <img src="1000_F_533418752_5uUP35KBjZJbaFUr9U0OCXyQHjVn6ueQ.jpg" width="180" height="180"><br><br>
+        <ul>
+          <li><a href="welcome.html" target="main-frame" class="button">Home Page</a></li><br><br>
+          <li><a href="buy.html" target="main-frame" class="button">Buy Property</a></li><br><br>
+          <li><a href="selling.html" target="main-frame" class="button">Sell Property</a></li><br><br>
+          <li><a href="payment.html" target="main-frame" class="button">Make Payment</a></li><br><br>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="main-content">
+      <iframe name="main-frame" src="welcome.html"></iframe>
+    </div>
+  </div>
+</body>
+</html>
